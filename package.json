@@ -1,0 +1,77 @@
+{
+    "name":                              "mosquitto",
+    "version":                           "0.9.0",
+    "x-date":                            "2026-01-03",
+    "type":                              "module",
+    "description":                       "Mosquitto MQTT Broker Turnkey Solution",
+    "keywords":                          [ "mqtt", "mosquitto", "broker" ],
+    "license":                           "MIT",
+    "repository": {
+        "type":                          "git",
+        "url":                           "git+https://github.com/rse/mosquitto-turnkey.git"
+    },
+    "author": {
+        "name":                          "Dr. Ralf S. Engelschall",
+        "email":                         "rse@engelschall.com",
+        "url":                           "http://engelschall.com"
+    },
+    "homepage":                          "https://github.com/rse/mosquitto-turnkey",
+    "bugs":                              "https://github.com/rse/mosquitto-turnkey/issues",
+    "types":                             "./dst/mosquitto.d.ts",
+    "module":                            "./dst/mosquitto.js",
+    "main":                              "./dst/mosquitto.js",
+    "exports": {
+        ".": {
+            "import":                    { "types": "./dst/mosquitto.d.ts", "default": "./dst/mosquitto.js" },
+            "require":                   { "types": "./dst/mosquitto.d.ts", "default": "./dst/mosquitto.js" }
+        }
+    },
+    "dependencies": {
+        "execa":                         "9.6.1",
+        "which":                         "6.0.0",
+        "tmp":                           "0.2.5",
+        "textframe":                     "1.2.0",
+        "selfsigned":                    "5.4.0",
+        "get-stream":                    "9.0.1"
+    },
+    "devDependencies": {
+        "eslint":                        "9.39.2",
+        "@eslint/js":                    "9.39.2",
+        "eslint-plugin-n":               "17.23.1",
+        "eslint-plugin-promise":         "7.2.1",
+        "eslint-plugin-import":          "2.32.0",
+        "eslint-plugin-mocha":           "11.2.0",
+        "eslint-plugin-chai-expect":     "3.1.0",
+        "neostandard":                   "0.12.2",
+        "globals":                       "17.0.0",
+        "oxlint":                        "1.36.0",
+        "eslint-plugin-oxlint":          "1.36.0",
+
+        "typescript":                    "5.9.3",
+        "tsx":                           "4.21.0",
+        "jiti":                          "2.6.1",
+        "mocha":                         "11.7.5",
+        "chai":                          "6.2.2",
+        "chai-as-promised":              "8.0.2",
+        "sinon-chai":                    "4.0.1",
+        "sinon":                         "21.0.1",
+        "mqtt":                          "5.14.1",
+
+        "@rse/stx":                      "1.1.4",
+        "nodemon":                       "3.1.11",
+        "shx":                           "0.4.0",
+
+        "@types/node":                   "25.0.3",
+        "@types/chai":                   "5.2.3",
+        "@types/mocha":                  "10.0.10",
+        "@types/sinon":                  "21.0.0",
+        "@types/sinon-chai":             "4.0.0",
+        "@types/chai-as-promised":       "8.0.2",
+        "@types/tmp":                    "0.2.6",
+        "@types/which":                  "3.0.4"
+    },
+    "scripts": {
+        "start":                         "stx -c etc/stx.conf -v4",
+        "test":                          "stx -c etc/stx.conf -v4 test"
+    }
+}
