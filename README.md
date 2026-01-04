@@ -20,10 +20,11 @@ platforms. The OCI container bundles the Mosquitto program in a portable
 way. The TypeScript/JavaScript API allows convenient configuration and
 run-time control of it.
 
-NOTICE: Because the TypeScript/JavaScript API required Mosquitto itself,
-it either requires you to have the `mosquitto` and `mosquitto_passwd`
-commands in your `$PATH` or (the default) requires you to have the
-`docker` command in your `$PATH`.
+> [!NOTE]
+> Because the TypeScript/JavaScript API required Mosquitto itself,
+> it either requires you to have the `mosquitto` and `mosquitto_passwd`
+> commands in your `$PATH` or (the default) requires you to have the
+> `docker` command in your `$PATH`.
 
 Installation
 ------------
