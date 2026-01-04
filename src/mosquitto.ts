@@ -216,9 +216,9 @@ export default class Mosquitto {
             acl += textframe(`
                 #   user ACL list
                 user    ${entry.username}
-                topic   write  ${entry.username}/#
-                topic   read   ${entry.username}/$share/#
-                topic   write  peer/#
+                topic   readwrite  ${entry.username}/#
+                topic   read       ${entry.username}/$share/#
+                topic   write      peer/#
             `)
         }
         await fs.promises.writeFile(aclFile, acl, { encoding: "utf8", mode: 0o600 })
