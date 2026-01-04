@@ -65,6 +65,7 @@
         "@types/which":                  "3.0.4"
     },
     "scripts": {
+        "prepublishOnly":                "stx -c etc/stx.conf -v4 build",
         "start":                         "stx -c etc/stx.conf -v4",
         "test":                          "stx -c etc/stx.conf -v4 test"
     }

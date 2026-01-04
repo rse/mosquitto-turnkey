@@ -2,6 +2,11 @@
 CHANGES
 =======
 
+0.9.4 (2026-01-04)
+------------------
+
+- BUGFIX: ensure on publish the latest version was built
+
 0.9.3 (2026-01-04)
 ------------------
 
