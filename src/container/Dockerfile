@@ -6,13 +6,13 @@
 ARG         IMAGE_PREFIX=ghcr.io/rse/
 ARG         IMAGE_NAME=mosquitto
 ARG         IMAGE_VERSION=2.0.22
-ARG         IMAGE_RELEASE=20260104
+ARG         IMAGE_RELEASE=20260117
 ARG         IMAGE_ALIAS=latest
 
 #   ==== STAGE 1 ====
 
 #   derive image from a certain base image
-FROM        golang:1.25.5-trixie AS stage1
+FROM        golang:1.25.6-trixie AS stage1
 
 #   add additional build tools
 RUN         apt-get update && \
@@ -120,7 +120,7 @@ RUN         cd mosquitto-go-auth && \
 #   ==== STAGE 2 ====
 
 #   derive image from a certain base image
-FROM        golang:1.25.5-trixie AS stage2
+FROM        golang:1.25.6-trixie AS stage2
 
 #   add additional build tools
 RUN         apt-get update && \
