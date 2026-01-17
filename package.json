@@ -1,6 +1,6 @@
 {
     "name":                              "mosquitto",
-    "version":                           "0.9.4",
+    "version":                           "0.9.5",
     "x-date":                            "2026-01-17",
     "type":                              "module",
     "description":                       "Mosquitto MQTT Broker Turnkey Solution",
