@@ -50,7 +50,7 @@ export default class Mosquitto {
     constructor (config: Partial<MosquittoConfig> = {}) {
         this.config = {
             native:       false,
-            container:    "ghcr.io/rse/mosquitto:2.0.22-20260104",
+            container:    "ghcr.io/rse/mosquitto:2.0.22-20260117",
             auth:         "builtin",
             persistence:  false,
             passwd:       [ { username: "example", password: "example" } ],
