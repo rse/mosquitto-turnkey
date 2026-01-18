@@ -302,6 +302,9 @@ export default class Mosquitto {
             })
         }
 
+        /*  avoid unhandled rejection warnings on stop()  */
+        this.process.catch(() => {})
+
         /*  capture outputs of the Mosquitto process  */
         this.process.stdout?.setEncoding("utf8")
         this.process.stderr?.setEncoding("utf8")
