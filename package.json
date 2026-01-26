@@ -30,7 +30,7 @@
         "execa":                         "9.6.1",
         "which":                         "6.0.0",
         "tmp":                           "0.2.5",
-        "textframe":                     "1.2.0",
+        "textframe":                     "1.2.1",
         "selfsigned":                    "5.5.0",
         "get-stream":                    "9.0.1"
     },
@@ -43,9 +43,9 @@
         "eslint-plugin-mocha":           "11.2.0",
         "eslint-plugin-chai-expect":     "3.1.0",
         "neostandard":                   "0.12.2",
-        "globals":                       "17.0.0",
-        "oxlint":                        "1.39.0",
-        "eslint-plugin-oxlint":          "1.39.0",
+        "globals":                       "17.1.0",
+        "oxlint":                        "1.41.0",
+        "eslint-plugin-oxlint":          "1.41.0",
 
         "typescript":                    "5.9.3",
         "tsx":                           "4.21.0",
@@ -58,7 +58,7 @@
         "nodemon":                       "3.1.11",
         "shx":                           "0.4.0",
 
-        "@types/node":                   "25.0.9",
+        "@types/node":                   "25.0.10",
         "@types/chai":                   "5.2.3",
         "@types/mocha":                  "10.0.10",
         "@types/tmp":                    "0.2.6",
