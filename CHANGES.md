@@ -2,6 +2,17 @@
 CHANGES
 =======
 
+1.0.2 (2026-02-17)
+------------------
+
+- BUGFIX: avoid lingering sockets after Docker process stop
+- UPDATE: update dependencies
+
+1.0.1 (2026-02-02)
+------------------
+
+- UPDATE: update dependencies
+
 1.0.0 (2026-02-01)
 ------------------
 
