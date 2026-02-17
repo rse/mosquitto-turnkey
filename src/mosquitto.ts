@@ -374,6 +374,10 @@ export default class Mosquitto extends EventEmitter {
         await this.process?.catch(() => {})
         clearTimeout(timeout)
 
+        /*  destroy stdio pipe streams  */
+        this.process?.stdout?.destroy()
+        this.process?.stderr?.destroy()
+
         /*  remove temporary directory  */
         this.tmpdir?.cleanup()
 
